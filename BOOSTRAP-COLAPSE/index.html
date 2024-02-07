@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EJERCICIO COLAPSES MENU Y BOTONES BOOSTRAP</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+    <link rel="shortcut icon" href="img/messi.png" />
+    </head>
+    <body>
+      <!-- METATAGS 
+
+      Explica  <meta name="robots" content="">  4 valores más usados y explicarlos-->
+      
+        <!-- Etiqueta canonical -->
+        <!-- Si el alt es muy largo que hago?-->
+     <!---Explica el concepto Link NOFOLLOW
+      
+      2) Crea una página web el bootstrap, con:
+      
+      Un menu.
+      
+      Dos botones (collapses) Cada uno con una pequeña explicación del un lenguaje(html . js, php).
+      
+      Crea 4 botones en vertical con los mismos lenguajes.-->
+   
+     
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+     
+          <a class="navbar-brand" href="index.html"> <img src="img/html.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">PROGRAMACION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 LENGUAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">JS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">PHP</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+        
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<center>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-4">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          <h1>¿Qué es HTML?</h1>
+        </button>
+       
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            <p>HTML es el lenguaje de marcado web más utilizado en la creación de páginas web. Fue diseñado para ser leído y entendido
+              <p>HTML es el lenguaje de marcado web más utilizado en la creación de páginas web. Es el primer paso para construir cualquier sitio web
+              <p>HTML es el lenguaje de marcado web más utilizado para la creación de páginas web.</p>
+              
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="col-4">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        <h1>¿Qué es JS?</h1>
+      </button>
+     
+    </p>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <div class="card card-body" style="width: 300px;">
+          <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web.</p>
+            
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="col-4">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      <h1>¿Qué es PHP?</h1>
+    </button>
+   
+  </p>
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body" style="width: 300px;">
+        <p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor ) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML. echo "¡Hola, soy un script de PHP!"; ?></p>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+ <center>
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-primary">HTML</button>
+  <button type="button" class="btn btn-danger">CSS</button>
+  <button type="button" class="btn btn-warning">JS</button>
+  <button type="button" class="btn btn-success">PHP</button>
+</div>
+</center>
+
+
+
+
+</div>
+
+
+</center>
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="js/javascript.js"></script>
+   
+    </body>
+</html>
