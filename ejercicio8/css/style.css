@@ -1,0 +1,29 @@
+.contenedor {
+  border: 5px solid black;
+  display: grid;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    "dos tres cuatro cinco"
+    "uno uno seis siete"
+    "uno uno ocho nueve"
+    "diez once doce nada";
+}
+
+.item{
+background-color: rgb(0, 145, 255);
+margin: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 25px;
+}
+
+#item1{
+grid-area: uno;
+background-color: orange;
+}
