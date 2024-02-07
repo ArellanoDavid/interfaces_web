@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(243, 243, 243));
+}
+
+.container {
+  padding: 15px;
+  margin-top: 20px;
+  width: 1000px;
+
+  display: grid;
+  border: solid 5px black;
+  grid-gap: 10px;
+  background: linear-gradient(to right, rgb(196, 196, 196), rgb(0, 0, 0));
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "item1 item1 item2 item2 item3 item3 item4 item4"
+    "item5 item5 item2 item2 item3 item3 item4 item4 "
+    "item5 item5 item6 item6 item6 item6 item7 item7"
+    "item8 item9 item6  item6 item6 item6 item13 item14"
+    "item8 item10 item10 item11 item12 item12 item13 item14 ";
+}
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+
+.texto {
+  font-family: "Frijole", cursive;
+  color: #f1af06; /* Este es un color dorado */
+  text-shadow: 2px 2px #686868, 4px 4px rgb(48, 46, 46);
+  font-size: 30px;
+}
+
+.texto:hover {
+  text-shadow: 0 0 10px #8f8f04, 0 0 20px #ffd700, 0 0 30px #ffd900,
+    0 0 40px #ffd700;
+  transform: scale(1.05);
+}
+
+/* Esto hará que el texto se agrande un poco al pasar el ratón */
+
+.item {
+  border-radius: 7%;
+  border: solid black 2px;
+  display: flex;
+}
+.texto1 p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+h1 {
+  font-size: 30px; /* Tamaño más grande */
+  font-family: "Nueva Fuente", sans-serif; /* Reemplaza "Nueva Fuente" con el nombre de la fuente que desees utilizar */
+ 
+  background: linear-gradient(to right, #e9e9e9, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s ease;
+}
+
+h1:hover {
+  color: #919191; /* Cambia esto por el color que quieras al pasar el ratón */
+  transform: scale(
+    1.1
+  ); /* Esto hará que el texto se agrande un poco al pasar el ratón */
+ /* La sombra se hace más grande al pasar el ratón */
+}
+
+h2 {
+  color: #ffffff; /* Naranja */
+  font-size: 20px;
+  font-family: "Press Start 2P"; /* Esta fuente recuerda a los videojuegos retro, muy populares en la cultura otaku */
+  text-shadow: 3px 3px #000000; /* Sombra dorada para darle un toque más "anime" */
+}
+
+h2:hover {
+  transform: scale(
+    1.1
+  ); /* Esto hará que el texto se agrande un poco al pasar el ratón */
+}
+.descripcion {
+  /* Define el tamaño de la fuente */
+  font-size: 14px; /* Tamaño mediano */
+  font-family: "Press Start 2P", cursive;
+  padding: 10px;
+
+  /* Define el color del texto */
+  color: #333; /* Color oscuro */
+
+  /* Justifica el texto */
+  text-align:left;
+
+  /* Define la animación del texto */
+  animation: colorChange 2s infinite;
+}
+
+/* Define la animación del color del texto */
+@keyframes colorChange {
+  0% {
+    color: #c2c2c2;
+  }
+  50% {
+    color: #858585;
+  }
+  100% {
+    color: #797979;
+  }
+}
+
+.texto1 {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 45px;
+
+  color: #000000; /* Color verde neón */
+
+  /* Define la sombra del texto */
+  text-shadow: 0 0 5px #cc6bf8, /* Sombra verde neón */ 0 0 10px #ff1bff,
+    /* Sombra verde neón */ 0 0 15px #000000,
+    /* Sombra verde neón */ 0 0 20px #500150; /* Sombra verde neón */
+}
+.texto1:hover {
+  /* Cambia el color del texto al hacer hover */
+  color: #7df9ff; /* Color azul neón */
+  /* Cambia la sombra del texto al hacer hover */
+  text-shadow: 0 0 5px #04c2cc, /* Sombra azul neón */ 0 0 10px #056d72,
+    /* Sombra azul neón */ 0 0 15px #84f4fa,
+    /* Sombra azul neón */ 0 0 20px #013f42; /* Sombra azul neón */
+}
+
+.texto2 {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 35px;
+
+  color: #ffffff; /* Cambiado a color blanco para mayor contraste */
+
+  /* Define una sombra más sutil */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.texto3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px; /* Aumenta el tamaño de la tipografía a 40px o el valor que desees */
+}
+.item2.item.descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-container {
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  text-align: center; /* Centra el ícono horizontalmente */
+}
+
+.item4.item.descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-container {
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  text-align: center; /* Centra el ícono horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item1 {
+  grid-area: item1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url("../img/1.avif");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item2 {
+  grid-area: item2;
+  background-color: #000000;
+}
+.item3 {
+  grid-area: item3;
+  background-image: url("../img/3.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item2:hover {
+  filter: brightness(110%);
+}
+.item3:hover {
+  filter: brightness(110%);
+}
+.item4:hover {
+  filter: brightness(110%);
+}
+
+.item4 {
+  grid-area: item4;
+
+  background-color: #000000;
+}
+.item5 {
+  grid-area: item5;
+
+  background-image: url("../img/5.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+
+.item6 {
+  grid-area: item6;
+  display: flex;
+
+  justify-content: center;
+  background-image: url("../img/portada.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+
+.item7 {
+  grid-area: item7;
+
+  background-image: url("../img/7.webp");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item8 {
+  display: flex;
+  grid-area: item8;
+  justify-content: center;
+  align-items: end;
+  background-image: url("../img/8.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover;
+}
+.item9 {
+  grid-area: item9;
+
+  background-image: url("../img/lulu.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+
+.item10 {
+  grid-area: item10;
+
+  background-image: url("../img/10.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(80%);
+}
+.item11 {
+  grid-area: item11;
+
+  background-image: url("../img/9.png");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item12 {
+  grid-area: item12;
+
+  background-image: url("../img/12.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item13 {
+  grid-area: item13;
+
+  background-image: url("../img/13.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item14 {
+  grid-area: item14;
+
+  background-image: url("../img/14.jpg");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+}
+.item13,
+.item14 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Esto hará que la transformación y el cambio de sombra sean suaves */
+}
+
+.item13:hover,
+.item14:hover,
+.item11:hover {
+  transform: scale(
+    1.05
+  ); /* Esto hará que la imagen se agrande un poco al pasar el ratón */
+}
+
+.item10:hover {
+  filter: brightness(130%);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(36, 1fr);
+    grid-template-areas:
+      "item3 item2"
+      "item3 item2"
+      "item3 item4"
+      "item3 item4"
+      "item6 item6"
+      "item6 item6"
+      "item6 item6"
+      "item6 item6"
+      "item7 item8"
+      "item7 item8"
+      "item10 item10"
+      "item10 item10"
+      "item10 item10"
+      "item11 item12"
+      "item11 item12"
+      "item13 item14"
+      "item13 item14"
+      "item13 item14"
+      "item13 item14"
+      "item13 item14"
+      "item9 item9"
+      "item9 item9"
+      "item9 item9"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item5 item5"
+      "item1 item1"
+      "item1 item1";
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    width: 90%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(32, 1fr);
+    grid-template-areas:
+      "item1"
+      "item1"
+      "item2"
+      "item2"
+      "item3"
+      "item3"
+      "item3"
+      "item4"
+      "item4"
+      "item5"
+      "item5"
+      "item6"
+      "item6"
+      "item6"
+      "item6"
+      "item6"
+      "item7"
+      "item7"
+      "item8"
+      "item8"
+      "item9"
+      "item9"
+      "item10"
+      "item10"
+      "item11"
+      "item11"
+      "item12"
+      "item12"
+      "item13"
+      "item13"
+      "item14"
+      "item14"
+      "item14"
+      "item14";
+  }
+  .item {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* @media (width<768px){
+    .container{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-rows:repeat(11,auto);
+    grid-template-areas: "item1 "
+                        "item2"
+                        "item3"
+                        "item4"
+                        "item5"
+                        "item5 "
+                        "item5"
+                        "item5"
+                        "item6"
+                        "item7"
+                        "item8";
+                       
+                       
+
+    
+     
+    }
+   
+   
+
+    } */
